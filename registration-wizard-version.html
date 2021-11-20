@@ -31,8 +31,7 @@
 	<link href="css/custom.css" rel="stylesheet">
 
 	<!-- MODERNIZR MENU -->
-	<script src="js/modernizr.js"></script>
-	<script src="js/storage.js"></script>
+	
 
 </head>
 
@@ -110,6 +109,7 @@
 					<div id="top-wizard">
 						<div id="progressbar"></div>
 					</div>
+					<!-- <button id="testid">Click me </button> -->
 					<!-- /top-wizard -->
 					<form id="wrapped" method="POST">
 						<input id="website" name="website" type="text" value="">
@@ -138,6 +138,7 @@
 											</select>
 										</div> -->
 							<!-- </div> -->
+							
 							<!-- <div class="form-group terms">
 										<label class="container_check">Please accept our <a href="#" data-toggle="modal" data-target="#terms-txt">Terms and conditions</a>
 											<input type="checkbox" name="terms" value="Yes" class="required">
@@ -148,25 +149,25 @@
 							<!-- /step-->
 							<div class="step">
 								<h3 class="main_question"><strong>1/3</strong>Contact details</h3>
-								<div class="form-group">
+								<div class="form-group0">
 									<!-- <input type="text" name="user_name" class="form-control required" placeholder="User name" onchange="getVals(this, 'user_name');"> -->
 									<!-- <input type="text" name="first_name" class="form-control required"
 										placeholder="First name" onchange="getVals(this, 'first_name');"> -->
 										<input type="text" name="first_name" class="form-control required"
-										placeholder="First name" value="" id="sample"> 
+										placeholder="First name" value="" id="first_name"> 
 
 								</div>
 
-								<div class="form-group">
+								<div class="form-group-1">
 									<!-- <input type="text" name="user_name" class="form-control required" placeholder="User name" onchange="getVals(this, 'user_name');"> -->
 									<input type="text" name="last_name" class="form-control required"
-										placeholder="Last name" onchange="getVals(this, 'Last_name');">
+										placeholder="Last name" id="last_name">
 
 								</div>
 
-								<div class="form-group">
+								<div class="form-group-2">
 									<input type="email" name="email" class="form-control required"
-										placeholder="Your Email" onchange="getVals(this, 'email');">
+										placeholder="Your Email" id="email">
 								</div>
 
 								<!-- <div class="form-group">
@@ -179,9 +180,9 @@
 
 
 
-								<div class="form-group">
-									<input type="phone" name="phone" id="Phone" class="form-control required"   minlength="10" maxlength="10" placeholder="Phone"
-										onchange="getVals(this, 'phone');">
+								<div class="form-group-3">
+									<input type="phone" name="phone"  class="form-control required"   minlength="10" maxlength="10" placeholder="Phone"
+									id="phone">
 								</div>
 
 
@@ -199,54 +200,57 @@
 								<!-- <h3 class="main_question"style="margin-top: 8rem;" >2/3<b> <br> About you</b></h3> -->
 								<h3 class="main_question" style="margin-top: 15rem;"><strong>2/3</strong><b>About you</b>
 								</h3>
-								<div class="form-group">
+								<div class="form-group-4">
 									<!-- <input type="text" name="user_name" class="form-control required" placeholder="User name" onchange="getVals(this, 'user_name');"> -->
 									<label for="display"><b>Display Name/Kitchen Name (the name your customers would
 											know
 											you by)*</b></label><br>
 									<input type="text" name="display" class="form-control required" minlength="50"placeholder=""
-										onchange="getVals(this, 'display');">
+										id="display">
 								</div>
 
-								<div class="form-group">
+								<div class="form-group-5">
 									<!-- <input type="text" name="user_name" class="form-control required" placeholder="User name" onchange="getVals(this, 'user_name');"> -->
 									<label for="passion"><b>Describe your passion/journey about cooking. (chef
 											description)*</b></label>
 									<input type="text" name="passion" class="form-control required" maxlength="400" placeholder=""
-										onchange="getVals(this, 'passion');">
+										id="passion">
 
 								</div>
 								<!-- radio button -->
-								<div class="form-group">
-									<label for="locationType"><b>Where do you Cook?*</b></label><br>
-									<input type="radio" id="ownKitchen" name="locationType" value="ownKitchen" required>
+								<div class="form-group" >
+									<label for="locationType"  ><b>Where do you Cook?*</b></label><br>
+									<input type="radio" id="ownKitchen" name="locationType" value="Own Home" required>
 									<label for="ownKitchen">Own Home</label>
-									<input type="radio" id="commercialKitchen" name="locationType"
-										value="commercialKitchen">
+									<input type="radio" id="ownKitcen" name="locationType"
+										value="commercial Kitchen">
 									<label for="commercialKitchen">Commercial Kitchen</label>
-									<input type="radio" id="cateringKitchen" name="locationType"
-										value="cateringKitchen">
+									<input type="radio" id="ownKiten" name="locationType"
+										value="catering Kitchen">
 									<label for="cateringKitchen">Catering Kitchen</label>
 								</div>
 
-								<div class="form-group">
-									<label for="locationType"><b>Types of dishes you Cook?*</b></label><br>
-									<input type="radio" id="Vegetarian" name="location" value="Vegetarian" required>
+								<div class="form-group2">
+									<label for="locationType2"><b>Types of dishes you Cook?*</b></label><br>
+									<input type="radio" id="Vegetarian" name="locationType2" value="Vegetarian" required>
 									<label for="Vegetarian">Vegetarian</label>
-									<input type="radio" id="Non-vegetarian" name="location" value="Non-vegetarian">
+									<input type="radio" id="Non-vegetarian" name="locationType2" value="Non-vegetarian">
 									<label for="Non-vegetarian">Non-vegetarian</label>
-									<input type="radio" id="both" name="location" value="both">
+									<input type="radio" id="both" name="locationType2" value="both">
 									<label for="Both">Both</label>
 								</div>
-								<div class="form-group">
+
+
+
+								<div class="form-group3">
 									<label for="cuisines"><b>Cuisines You Cook?*</b></label><br>
-									<input type="checkbox" id="northIndian" name="cuisines" value="northIndian"
+									<input type="checkbox" id="northIndian" name="cuisines" value="North Indian"
 										required>
 									<label for="northIndian">North Indian</label>
-									<input type="checkbox" id="southIndian" name="cuisines" value="southIndian">
-									<label for="southIndian">South Indian</label>
-									<input type="checkbox" id="hyderabadi" name="cuisines" value="hyderabadi">
-									<label for="hyderabadi">Hyderabadi</label>
+									<input type="checkbox" id="southIndian" name="cuisines" value="South Indian">
+									<label for="South Indian">South Indian</label>
+									<input type="checkbox" id="hyderabadi" name="cuisines" value="Hyderabadi">
+									<label for="Hyderabadi">Hyderabadi</label>
 									<input type="checkbox" id="Mughlai" name="cuisines" value="Mughlai">
 									<label for="Mughlai">Mughlai</label><br>
 									<input type="checkbox" id="Rajasthani" name="cuisines" value="Rajasthani">
@@ -255,31 +259,31 @@
 									<label for="Punjabi">Punjabi</label>
 									<input type="checkbox" id="Gujrati" name="cuisines" value="Gujrati">
 									<label for="Gujrati">Gujrati </label>
-									<input type="checkbox" id="Maharasthrian" name="cuisines" value="Maharasthrian">
-									<label for="Maharasthrian">Maharasthrian</label>
+									<input type="checkbox" id="Maharashtrian" name="cuisines" value="Maharashtrian">
+									<label for="Maharashtrian">Maharashtrian</label>
 
 
 								</div>
 
 								<!-- drop down -->
 								<div>
-									<label for="cuisines"><b>What working hours suits you best to cook?*</b></label><br>
+									<label for="working"><b>What working hours suits you best to cook?*</b></label><br>
 									<label for="hours">Starting Hours</label>
-									<select name="hours" id="9" required>
+									<select name="hours" id="starthour" required>
 
-										<option value="hours" required>0</option>
-										<option value="hours">1</option>
-										<option value="hours">2</option>
-										<option value="hours">3</option>
-										<option value="hours">4</option>
-										<option value="hours">5</option>
-										<option value="hours">6</option>
-										<option value="hours">7</option>
-										<option value="hours">8</option>
-										<option value="hours" selected>9</option>
-										<option value="hours">10</option>
-										<option value="hours">11</option>
-										<option value="hours">12</option>
+										<option value="0" required>0</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+										<option value="6">6</option>
+										<option value="7">7</option>
+										<option value="8">8</option>
+										<option value="9" selected>9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
 									</select>
 
 
@@ -356,7 +360,7 @@
 									<label for="Sunday">Sunday</label><br>
 								</div>
 								<br>
-									<div class="form-group">
+									<div class="form-group4">
 									<label for="locationType"><b>Are you interested to do party / bulk
 											orders?*</b></label></label><br>
 									<input type="radio" id="Yes" name="location2" value="Yes" required>
@@ -367,7 +371,7 @@
 								</div>
 
 
-								<div class="form-group">
+								<div class="form-group5">
 									<label for="locationType"><b>Would you like to partner with COOKHIKE for making
 											homemade snacks?*</b></label><br>
 									<input type="radio" id="Yes" name="location3" value="Yes" required>
@@ -458,7 +462,7 @@
 											</li>
 										</ul> -->
 
-									<div class="form-group">
+									<div class="form-group6">
 										<label for="locationType"><b>Identity Proof*</b></label><br>
 										<input type="radio" id="Aadhar Card" name="locationType1" value="Aadhar Card"
 											required>
@@ -477,14 +481,14 @@
 											value="Driving License" required>
 										<label for="Driving License">Driving License</label><br>
 										<label for="myfile">Select a file:</label>
-										<input type="file" id="myfile" name="myfile" required><br>
+										<input type="file" id="myfile" name="myfile1" accept="image/jpeg" required><br>
 
 									</div>
 
 
 
 
-									<div class="form-group">
+									<div class="form-group7">
 										<label for="locationType"><b>Address Proof*</b></label><br>
 										<input type="radio" id="Driving License" name="locationType2"
 											value="Driving License" required>
@@ -504,16 +508,16 @@
 											months)</label><br>
 
 										<label for="myfile">Choose file:</label>
-										<input type="file" id="myfile" name="myfile" required><br><br>
+										<input type="file" id="myfile" name="myfile2"accept="image/jpeg" required><br><br>
 									</div>
 
-									<div class="form-group">
+									<div class="form-group8">
 										<label for="locationType"><b>FSSAI Registration No / FSSAI
 												License*</b></label><br>
 										<input type="radio" id="if yes" name="locationType" value="if yes" required>
 										<label for="if yes">If ‘YES’ upload (PDF) for the same.</label> <br><label
 											for="myfile">Select a file:</label>
-										<input type="file" id="myfile" name="myfile" style="color: #492270;"><br>
+										<input type="file" id="myfile" name="myfile" accept="image/jpeg" style="color: #492270;"><br>
 										<input type="radio" id="if no" name="locationType6" value="if no" required>
 										<label for="if no">If ‘NO’ are you willing to apply for FSSAI
 											Registration?</label><br>
@@ -534,7 +538,8 @@
 						<div id="bottom-wizard">
 							<button type="button" name="backward" class="backward">Prev</button>
 							<button type="button" name="forward" class="forward" id="next">Next</button>
-							<button type="button" name="process" class="submit" >Submit</button>
+							<!-- <button type="button" name="process" class="submit" >Submit</button> -->
+							<button type="button" id = "submitId" name="process" class="submit" onclick="submitClick">Submit</button>
 
 						</div>
 						<!-- /bottom-wizard -->
@@ -547,6 +552,14 @@
 		<!-- /row-->
 	</div>
 	<!-- /container-fluid -->
+	<script type="text/javascript">
+		document.getElementById("submitId").onclick = function () {
+			if (document.getElementsByName('myfile1')[0].files.length > 0 && document.getElementsByName('myfile2')[0].files.length > 0)
+			{
+			location.href = "www.yoursite.com";
+			}
+		};
+	</script>
 
 	<div class="cd-overlay-nav">
 		<span></span>
@@ -601,6 +614,8 @@
 
 	<!-- Wizard script -->
 	<script src="js/registration_func.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/storage.js"></script>
 
 </body>
 
